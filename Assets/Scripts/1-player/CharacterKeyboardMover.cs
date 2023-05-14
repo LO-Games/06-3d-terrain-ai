@@ -62,7 +62,7 @@ public class CharacterKeyboardMover : MonoBehaviour {
         if (jumpAction.triggered) {
             // Update animation
             animator.SetBool("Jump", true);
-            velocity.y = Mathf.Sqrt(2 * gravity * 2);
+            velocity.y = Mathf.Sqrt(2 * gravity * 2 * Time.deltaTime);
 
             // Play audio
             // AudioSource.PlayClipAtPoint(jumpAudioClip, transform.position);
