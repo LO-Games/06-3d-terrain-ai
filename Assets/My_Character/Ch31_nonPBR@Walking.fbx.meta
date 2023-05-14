@@ -1,48 +1,13 @@
 fileFormatVersion: 2
-guid: 1d1a991e03ffe064a8d19da621d052e1
+guid: 9aaf3441808572048980fe06572f80fb
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch31_body
-    second: {fileID: 2100000, guid: 587b66b0d0e078d47aae5246c953259e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch31_hair
-    second: {fileID: 2100000, guid: b005ce8f4d9418e499866cbc64b67bfb, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch31_1001_Diffuse
-    second: {fileID: 2800000, guid: 90fe1324ed2174d449edd9a8c359e7f0, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch31_1001_Glossiness
-    second: {fileID: 2800000, guid: f07b524f41db48a42a7abe9e7c37f017, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch31_1001_Normal
-    second: {fileID: 2800000, guid: 6f3dbca4710002e4e9cbbb712680b5ea, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch31_1001_Specular
-    second: {fileID: 2800000, guid: 571da8f2eea9b5449a5d62f5e2c33f98, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch31_1002_Diffuse
-    second: {fileID: 2800000, guid: 4af19ce9a0c1f6845a0f4af5426ab816, type: 3}
+  externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
-    materialSearch: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -110,11 +75,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 753f6625537249b47a5d07eccfe6a027
-  - 174249374a4b6c74eb7827ecb634ca61
-  - 7fb0ae5be2c0e89418f6d3bf07f37a01
-  - 9aaf3441808572048980fe06572f80fb
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3

@@ -12,15 +12,18 @@ public class CharacterKeyboardMover : MonoBehaviour {
 
     [SerializeField] InputAction moveAction;
     [SerializeField] InputAction jumpAction;
+    [SerializeField] InputAction runningAction;
 
     private void OnEnable() { 
         moveAction.Enable(); 
         jumpAction.Enable();
+        runningAction.Enable();
     }
 
     private void OnDisable() { 
         moveAction.Disable();
         jumpAction.Disable();
+        runningAction.Disable();
     }
 
     void OnValidate() {
@@ -36,6 +39,10 @@ public class CharacterKeyboardMover : MonoBehaviour {
             jumpAction = new InputAction(type: InputActionType.Button);
         if (jumpAction.bindings.Count == 0)
             jumpAction.AddBinding("<Keyboard>/space");
+        if(runningAction == null)
+            runningAction = new InputAction(type: InputActionType.Button);
+        if (runningAction.bindings.Count == 0)
+            runningAction.AddBinding("<Keyboard>/leftShift");
     }
 
     void Start() {
@@ -47,14 +54,30 @@ public class CharacterKeyboardMover : MonoBehaviour {
 
     void Update() {
         if (cc.isGrounded) {
-            // Update animation
             Vector3 movement = moveAction.ReadValue<Vector2>();
-            velocity.x = movement.x * speed;
-            velocity.z = movement.y * speed;
+            float currentSpeed = speed;
+
+        if (runningAction.IsPressed() && movement.magnitude > 0) {
+            currentSpeed *= 2f; // Double the speed when running
+            animator.SetBool("Run", true);
+            animator.SetBool("Walk", false);
+        } else {
+            currentSpeed /= 2f; 
+            animator.SetBool("Run", false);
+            animator.SetBool("Walk", true);
+        }
+
+            velocity.x = movement.x * currentSpeed;
+            velocity.z = movement.y * currentSpeed;
 
             // Update animation
-        }
-        else {
+            if (movement.magnitude > 0 && !runningAction.IsPressed()) {
+                animator.SetBool("Walk", true);
+            } else {
+                animator.SetBool("Walk", false);
+            }
+
+        } else {
             animator.SetBool("Jump", false);
             velocity.y -= gravity * Time.deltaTime;
         }
