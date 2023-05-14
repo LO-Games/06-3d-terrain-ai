@@ -67,10 +67,15 @@ public class CharacterKeyboardMover : MonoBehaviour {
             animator.SetBool("Walk", true);
         }
 
+          // change player direction based on movement
+            // transform.LookAt(transform.position + new Vector3(movement.x, 0, movement.y));
+
+
             velocity.x = movement.x * currentSpeed;
             velocity.z = movement.y * currentSpeed;
 
-            // Update animation
+
+            // if movement is detected, play walking animation
             if (movement.magnitude > 0 && !runningAction.IsPressed()) {
                 animator.SetBool("Walk", true);
             } else {

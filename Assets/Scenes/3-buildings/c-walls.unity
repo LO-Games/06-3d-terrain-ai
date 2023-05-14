@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -638,7 +638,7 @@ MonoBehaviour:
       m_Flags: 4
     - m_Name: Up
       m_Id: 31bf76d0-9784-46fd-8a45-89ce9dfedb42
-      m_Path: <Keyboard>/upArrow
+      m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -646,7 +646,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: Down
       m_Id: 10932e36-cbad-4f53-87e1-5f66f4a37946
-      m_Path: <Keyboard>/downArrow
+      m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -654,7 +654,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: Left
       m_Id: 0490b0f0-bd67-4470-8412-bc14ef1503c5
-      m_Path: <Keyboard>/leftArrow
+      m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -662,7 +662,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: Right
       m_Id: 55cd216f-c196-4656-92b5-8bd35145bda0
-      m_Path: <Keyboard>/rightArrow
+      m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -12745,75 +12745,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1695703575}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1708481847
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 174249374a4b6c74eb7827ecb634ca61,
-        type: 3}
-      propertyPath: m_Name
-      value: Ch31_nonPBR@Running
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 174249374a4b6c74eb7827ecb634ca61, type: 3}
 --- !u!1001 &1713818084
 PrefabInstance:
   m_ObjectHideFlags: 0
