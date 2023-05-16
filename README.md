@@ -1,12 +1,11 @@
 # Unity week 6: Three-dimensional scene-building and navigation
 
 ## Our changes
-We chose 1. Developing the existing scene (from homework 1).
+One change we made is from homework1 : 1.developing the existing scene.
 We made stairs leading to a bright room divided into a bedroom and bathroom.
-In addition, we chose player development from the guide and chose 1. movement (from homework 2).
+Two other changes are from homework2 : A.player development from the guide - 1. movement.
 We chose sections A and B in which the player should be given the option to jump and run.
-We added a character with appropriate animations for walking, running and jumping.
-We added an original change where the player must collect a card to open the door in the main building.
+In addition, we added a character with appropriate animations for walking, running and jumping and an original change where the player must collect a card to open the door in the main building.
 
 * All the changes made on c-walls scene
 
