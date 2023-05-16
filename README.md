@@ -1,5 +1,15 @@
 # Unity week 6: Three-dimensional scene-building and navigation
 
+## Our changes
+
+* All the changes made on c-walls scene
+
+One change we made is from homework1 : 1.developing the existing scene.
+We made stairs leading to a lighted room divided into a bedroom and bathroom.
+Two other changes are from homework2 : A.player development from the guide - 1. movement.
+We chose sections A and B in which the player should be given the option to jump and run.
+In addition, we added a character with appropriate animations for walking, running and jumping using Mixamo website and an original change where the player must collect a card to open the door in the main building.
+
 A project with step-by-step scenes illustrating how to construct a 3D game, including:
 
 * Scene modelling with Terrain Tools and ProGrids;
