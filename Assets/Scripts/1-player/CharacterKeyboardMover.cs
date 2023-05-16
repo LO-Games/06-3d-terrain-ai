@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class CharacterKeyboardMover : MonoBehaviour {
     [SerializeField] float speed = 3.5f;
     [SerializeField] float gravity = 9.81f;
+    [SerializeField] float jumpHeight = 1.5f;
 
     private CharacterController cc;
     private Animator animator;
@@ -90,8 +91,8 @@ public class CharacterKeyboardMover : MonoBehaviour {
         if (jumpAction.triggered) {
             // Update animation
             animator.SetBool("Jump", true);
-            velocity.y = Mathf.Sqrt(2 * gravity * 2 * Time.deltaTime);
-
+            // jump 
+            velocity.y = Mathf.Sqrt(2 * gravity * jumpHeight * Time.deltaTime);
             // Play audio
             // AudioSource.PlayClipAtPoint(jumpAudioClip, transform.position);
         }

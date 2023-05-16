@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Inventory
+  - Card
+  - Exterior_House
+  - Building
   layers:
   - Default
   - TransparentFX
@@ -11,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Exterior_House
+  - House
+  - Player
+  - House_Fruniters
   - 
   - 
   - 

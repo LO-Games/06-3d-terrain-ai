@@ -41,6 +41,7 @@ public class Patroller: MonoBehaviour {
         Debug.Log("New target: " + currentTarget.name);
         navMeshAgent.SetDestination(currentTarget.transform.position);
         //if (animator) animator.SetBool("Run", true);
+        animator.SetBool("isWalking", true);
         timeToWaitAtTarget = Random.Range(minWaitAtTarget, maxWaitAtTarget);
     }
 
@@ -50,6 +51,7 @@ public class Patroller: MonoBehaviour {
             FaceDestination();
         } else {   // we are at the target
             //if (animator) animator.SetBool("Run", false);
+            animator.SetBool("isWalking", false);
             timeToWaitAtTarget -= Time.deltaTime;
             if (timeToWaitAtTarget <= 0)
                 SelectNewTarget();
