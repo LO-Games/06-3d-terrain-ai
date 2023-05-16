@@ -8,7 +8,7 @@ We chose sections A and B in which the player should be given the option to jump
 We added a character with appropriate animations for walking, running and jumping.
 We added an original change where the player must collect a card to open the door in the main building.
 
-*All the changes made on c-walls scene
+* All the changes made on c-walls scene
 
 A project with step-by-step scenes illustrating how to construct a 3D game, including:
 
